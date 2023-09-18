@@ -29,4 +29,11 @@ block content
 
     label(for="state") State:
       select(name="state" id="state")
-        option(value="")
+        option(value="CA") CA
+        option(value="NV") NV
+        option(value="WA") WA
+
+    label(for="zip") Zip Code:
+      input(type="text" name="zip" id="zip")
+
+    button(type="submit" action="post") Create My Card
