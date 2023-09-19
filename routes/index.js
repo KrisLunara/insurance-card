@@ -12,10 +12,15 @@ router.post('/card',function (req,res) {
     firstName: req.body.firstName,
     lastName: req.body.lastName,
     type: req.body.type,
-    dateOfBirth: req.body.dateOfBirth,
+    dateOfBirth: new Date(req.body.dateOfBirth),
     addressLine1: req.body.addressLine1,
     addressLine2: req.body.addressLine2,
     city: req.body.city,
+    state: req.body.state,
+    zip: req.body.zip,
+    accountNumber : 12345,
+    //Autofill to today
+    currentDate: new Date()
   })
 })
 module.exports = router;
