@@ -1,7 +1,7 @@
 extends layout
 
 block content
-    div.card
+    div.card(class = `card ${cardClass}`)
         h3.title ACME Insurance Co
         div.info-row.name-row
             p.label Name:
@@ -22,14 +22,13 @@ block content
                 p.label Address:
 
             div.address-text
-                p #{adressLine1}
-                p #{adressLine2}
+                p #{addressLine1}
+                p #{addressLine2}
                 p #{city}, #{state}, #{zip}
         div.info-container
             div.info-row
                 p.label Acct #:
                 p #{accountNumber}
-        div.info-container
             div.info-row
                 p.label Exp.:
                 //Add 4 years to today's date to gte expiration

@@ -14,9 +14,10 @@ input, select{
 .info-row {
   flex: 1;
 }
-label {
+.label {
   font-weight: bold;
   margin-right: 8px;
+  color: black;
 }
 .info-container {
   gap: 16px
@@ -47,6 +48,23 @@ label {
 .address-text p:last-child {
   margin-bottom: 6px;
 }
+/*change card to reflect type of insurance*/
+.card.premium{
+  background-color: #fbe5b7;
+  border: 2px solid #d7ac57;
+  color: #d7ac57;
+}
+.card.standard{
+  background-color: #efeeee;
+  border: 2px solid #999;
+  color: #999;
+}
+.card.bronze{
+  background-color: #c79088;
+  border: 2px solid #714740;
+  color: #714740;
+}
+
 a {
   color: #00B7FF;
 }
